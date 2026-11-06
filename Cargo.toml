@@ -1,0 +1,8 @@
+[package]
+name = "sigmaos-posix"
+version = "0.1.0"
+edition = "2021"
+description = "SigmaOS POSIX compatibility layer: errno, syscall ABI, unistd-style API"
+license = "MIT"
+
+[dependencies]
