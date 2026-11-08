@@ -1,8 +1,10 @@
 [package]
-name = "sigmaos-posix"
+name = "sigmaos_posix"
 version = "0.1.0"
 edition = "2021"
-description = "SigmaOS POSIX compatibility layer: errno, syscall ABI, unistd-style API"
 license = "MIT"
+description = "SigmaOS posix component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
+[lib]
+name = "sigmaos_posix"
+path = "src/lib.rs"
