@@ -8,6 +8,17 @@
 #![forbid(unsafe_code)]
 
 use std::fmt;
+
+// Real POSIX subsystem modules (errno/path/stat/syscall)
+pub mod errno;
+pub mod path;
+pub mod stat;
+pub mod syscall;
+
+pub use errno::Errno;
+pub use path::normalize_path;
+pub use stat::{FileType, Stat};
+pub use syscall::Syscall;
 /// Errors for `ToolError` operations. Fail-fast: invalid input is rejected.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ToolError {
